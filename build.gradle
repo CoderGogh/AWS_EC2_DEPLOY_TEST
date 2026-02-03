@@ -23,6 +23,11 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// AWS S3 연동 (Spring Cloud AWS)
+	implementation 'io.awspring.cloud:spring-cloud-starter-aws:2.4.4'
+	// Lombok (Getter/Setter 자동생성)
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
 }
 
 tasks.named('test') {
